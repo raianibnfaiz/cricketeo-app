@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cricketeoHomeFragment"
+        android:icon="@drawable/baseline_sports_cricket_24"
+        android:title="Cricketeo Home"/>
+
+    <item
+        android:id="@+id/teamsFragment"
+        android:title="Countries Team Squad"
+        android:icon="@drawable/baseline_people_24"/>
+    <item
+        android:id="@+id/moreInfoFragment"
+        android:title="More Info"
+        android:icon="@drawable/baseline_more_vert_24"/>
+</menu>

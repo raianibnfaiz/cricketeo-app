@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Cricketeo App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Open">open</string>
+    <string name="Close">close</string>
+    <string name="visitorTeamLineup">visitor</string>
+    <string name="localTeamLineup">local</string>
+    <string name="batsman">Batsman</string>
+    <string name="bowler">Bowler</string>
+    <string name="r">R</string>
+    <string name="o">O</string>
+    <string name="m">M</string>
+    <string name="run">R</string>
+    <string name="w">W</string>
+    <string name="economyRate">ER</string>
+    <string name="strikeRate">SR</string>
+    <string name="description">description</string>
+    <string name="man_of_the_match">Man Of the match</string>
+</resources>

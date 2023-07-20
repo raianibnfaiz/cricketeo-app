@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.Career.CareerBowlingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/battingHeaderInfoRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:focusable="true"
+            android:orientation="vertical"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:id="@+id/tableHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#B4BEED"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:text="Bowling"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#B4BEED"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:text="Test"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#B4BEED"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:text="ODI"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#B4BEED"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:text="T20"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:id="@+id/matchesRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Matches"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/testMatchesPlayed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="-"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/odiMatchesPlayed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:padding="3dp"
+                android:text="-"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/t20Matches"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:textAlignment="center"
+                android:text="-"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/inningsRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Innings"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/testInningsPlayed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="-"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/odiInningsPlayed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:padding="3dp"
+                android:text="-"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/t20Innings"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:textAlignment="center"
+                android:text="-"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ballsRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Overs"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/testOversBowled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="-"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/odiOversBowled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:padding="3dp"
+                android:text="-"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/t20OversBowled"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:textAlignment="center"
+                android:text="-"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/maidensRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Maidens"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/testMaiden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="-"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/odiMaiden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:padding="3dp"
+                android:text="-"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/t20Maiden"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:textAlignment="center"
+                android:text="-"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/wicketsRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Wickets"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/testWickets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="-"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/odiWickets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:padding="3dp"
+                android:text="-"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/t20Wickets"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:textAlignment="center"
+                android:text="-"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/economyRatesRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="E. Rate"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/testEconomy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="-"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/odiEconomy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:padding="3dp"
+                android:text="-"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/t20Economy"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:textAlignment="center"
+                android:text="-"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
